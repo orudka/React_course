@@ -3,19 +3,21 @@
 
 <head>
     <title>My Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/dist/css/bootstrap.css">
 </head>
 
 <body>
     <div class="grid">
         <header>
-            <nav><a href="index.html">Keep It Simple Blog</a>
-                About
-                Contact
-                <a href="#" class="sing-in">Sing in</a>
-            </nav>
+            <ul class="navigation">
+                <li><a href="index.html">Keep It Simple Blog</a></li>
+                <li class="about">About</li>
+                <li class="content">Contact</li>
+                <li><a href="singin.html" class="sing-in">Sing in</a></li>
+            </ul>
         </header>
         <article>
             <div class="span-2 subitems">
@@ -24,7 +26,10 @@
                     <h2><a href="#">Inventore
                             Hic Voluptatem</a></h2>
                     <h3>by John Smith</h3>
-                    <p>Posted on September 07, 2015 at 01:51 PM</p>
+                    <p>
+                        <span class="glyphicon glyphicon-time"></span>
+                        Posted on September 07, 2015 at 01:51 PM
+                    </p>
                     <hr>
                     <p>Accusamus excepturi perspiciatis consequatur enim incidunt adipisci rerum eos hic asperiores
                         unde
@@ -32,24 +37,32 @@
                         voluptatem. Unde tempora consequuntur temporibus perferendis aperiam minima, quas enim vitae
                         labore est
                         amet cum officia et, ...</p>
-                    <button type="button"><a href="#">Read
-                            More</a></button></button>
+                    <button type="button" class="btn btn-primary">Read More
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
                     <hr>
                 </div>
 
                 <div>
                     <h2><a href="#">Qui Odit Rerum</a></h2>
                     <h3>by Max Johnson</h3>
-                    <p>Posted on September 06, 2015 at 06:44 PM</p>
+                    <p>
+                        <span class="glyphicon glyphicon-time"></span>
+                        Posted on September 06, 2015 at 06:44 PM
+                    </p>
                     <hr>
                     <p>Perspiciatis autem a ipsum optio veniam cumque recusandae magnam aperiam iusto veritatis iure
                         doloribus assumenda reiciendis odit maiores blanditiis quisquam possimus. Perspiciatis ratione
                         incidunt perferendis optio veniam eum, accusamus quae praesentium exercitationem voluptatibus
                         voluptas sequi quam et est dolores, ...</p>
-                    <button type="button"><a href="#">Read
-                            More</a></button></button>
+                    <button type="button" class="btn btn-primary">Read More
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
                     <hr>
-                    <button type="button"><a href="#"></a>Older</button>
+                    <ul class="pager">
+                        <li class="next"><a href="#">Older→</a></li>
+                        <!--<li class="previous"><a href="#">← Newer</a></li>-->
+                    </ul>
                 </div>
             </div>
         </article>

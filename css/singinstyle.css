@@ -1,5 +1,3 @@
-/*CSS Grid Layout*/
-
 .grid {
 	display: grid;
 	grid-gap: 20px;
@@ -47,7 +45,8 @@ footer {
     background-color:#ffffff;
     border-radius: 5px;
     border: none;
-    color: #333333;   
+    color: #333333;
+        
 }
 
 .grid > *:nth-child(even) {
@@ -69,46 +68,11 @@ footer {
     border: 1px solid #e3e3e3;
 }
 
-/*Body*/
-
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
     color: #333333;
     background-color: #fff;
 }
-small{
-    font-weight: 400;
-    line-height: 1;
-    color: #777;
-    font-size: 65%;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: lighter;
-}
-h2 a{
-    color: #337ab7;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 500;
-}
-h2 a:hover{
-    color: #23527C;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-h3{
-    font-size: 21px;
-    font-weight:300;
-}
-
-/*Header*/
 
 header a{    
     font-size: 18px;
@@ -120,6 +84,14 @@ header a:hover{
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
+    
+}
+article, aside{
+    margin: 0 50px 0 50px;
+}
+footer{
+    margin: 0 50px 0 50px;
+    font-size: 12px;
 }
 
 .navigation{
@@ -127,6 +99,7 @@ header a:hover{
     display: grid;
     list-style-type: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .sing-in{    
@@ -134,23 +107,3 @@ header a:hover{
     display: grid;
     justify-content: end;
 }
-
-/*Site content: article, aside*/
-
-article, aside{
-    margin: 0 50px 0 50px;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-}
-
-/*Footer*/
-
-footer{
-    margin: 0 50px 0 50px;
-    font-size: 12px;
-}
-
